@@ -1,4 +1,4 @@
-<?php
+п»ї<?php
 session_start();
 $id=$_SESSION['id'];
 $pid=$_SESSION['pid'];
@@ -9,7 +9,7 @@ $Middlename=$_SESSION['Middlename'];
 ?>
 <html>
 <head>
-  <title>Система распределения заданий на курсовые работы</title>
+  <title>РЎРёСЃС‚РµРјР° СЂР°СЃРїСЂРµРґРµР»РµРЅРёСЏ Р·Р°РґР°РЅРёР№ РЅР° РєСѓСЂСЃРѕРІС‹Рµ СЂР°Р±РѕС‚С‹</title>
   <link rel="StyleSheet" type="text/css" href="css/style.css">
 <style type="text/css"></style>
 </head>	
@@ -20,7 +20,7 @@ $Middlename=$_SESSION['Middlename'];
     <td>
       <table border="0" width="100%" cellspacing="0" cellpadding="0">
         <tbody><tr>
-          <td bgcolor="#4B69B0" background="img/PLogoV5-Bk.gif" border-spacing="0"><a href="/"><img border="0" src="img/PLogoV5-1.jpg" alt="Портал МЭИ(ТУ)"></a></td>
+          <td bgcolor="#4B69B0" background="img/PLogoV5-Bk.gif" border-spacing="0"><a href="/"><img border="0" src="img/PLogoV5-1.jpg" alt="РџРѕСЂС‚Р°Р» РњР­Р(РўРЈ)"></a></td>
           <td bgcolor="#4B69B0" background="img/PLogoV5-Bk.gif">			
 			<img border="0" src="img/niu.png" align="left"></td>
           <td bgcolor="#4B69B0" background="img/PLogoV5-Bk.gif">&nbsp;</td>
@@ -38,35 +38,35 @@ $Middlename=$_SESSION['Middlename'];
 	
 <?php
 if(isset($_SESSION['login']))
-{$login='Здравствуйте, '.$_SESSION['login'].'!';}
-// Проверяем, пусты ли переменные логина и id пользователя
+{$login='Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, '.$_SESSION['login'].'!';}
+// РџСЂРѕРІРµСЂСЏРµРј, РїСѓСЃС‚С‹ Р»Рё РїРµСЂРµРјРµРЅРЅС‹Рµ Р»РѕРіРёРЅР° Рё id РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 if (empty($_SESSION['login']) or empty($_SESSION['id']))
-// Если пусты, то
+// Р•СЃР»Рё РїСѓСЃС‚С‹, С‚Рѕ
 {
 echo "<br><div class=''>
-<center>Вы вошли на сайт, как гость
-<a href='login.php' class='index_button_v'>Войти</a>
-<a href='registration.php' class='index_button_v'>Регистрация</a></div><br>
+<center>Р’С‹ РІРѕС€Р»Рё РЅР° СЃР°Р№С‚, РєР°Рє РіРѕСЃС‚СЊ
+<a href='login.php' class='index_button_v'>Р’РѕР№С‚Рё</a>
+<a href='registration.php' class='index_button_v'>Р РµРіРёСЃС‚СЂР°С†РёСЏ</a></div><br>
 </center>
   <tr><td background='img/HLineBk.gif' bgcolor='#A2A2A2' height='4'><img border='0' src='img/HLine.gif' width='100%' height='4'></td></tr>";
 }
 else
 {
 echo "<br><div class=''>
-<center> Вы вошли на сайт, как $Secondname $Name!
-<a href='close.php' class='index_button_v'>Выход</a></div><br></center>
+<center> Р’С‹ РІРѕС€Р»Рё РЅР° СЃР°Р№С‚, РєР°Рє $Secondname $Name!
+<a href='close.php' class='index_button_v'>Р’С‹С…РѕРґ</a></div><br></center>
   <tr><td background='img/HLineBk.gif' bgcolor='#A2A2A2' height='4'><img border='0' src='img/HLine.gif' width='100%' height='4'></td></tr>";
 }
-//подключение к бд
+//РїРѕРґРєР»СЋС‡РµРЅРёРµ Рє Р±Рґ
 if (!$link = mysql_connect('localhost', 'root', '')) 
   {
-  echo 'Ошибка подключения к базе данных <br> <a href=/index.php>Вернуться к процедуре авторизации</a>';
+  echo 'РћС€РёР±РєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С… <br> <a href=/index.php>Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє РїСЂРѕС†РµРґСѓСЂРµ Р°РІС‚РѕСЂРёР·Р°С†РёРё</a>';
   exit;  
   }
 mysql_query("SET NAMES 'cp1251'", $link);
 mysql_select_db('university', $link);
   
- /* $sql = "SELECT `themes`.`ThemID` AS TID, `themes`.`ThemUID` AS TUID,
+ /*- $sql = "SELECT `themes`.`ThemID` AS TID, `themes`.`ThemUID` AS TUID,
                     `users`.`UName` AS TUName, `themes`.`ThemDate` AS TDate,
                     `themes`.`ThemContent` AS TContent FROM `themes`, `users`
                     WHERE (`tasks`.`pid` = `users`.`UID`)
@@ -77,7 +77,7 @@ mysql_select_db('university', $link);
 */
      $result = mysql_Query($sql, $link);
      if (!$result) {
-       echo "Ошибка выполнения запроса к бд";
+       echo "РћС€РёР±РєР° РІС‹РїРѕР»РЅРµРЅРёСЏ Р·Р°РїСЂРѕСЃР° Рє Р±Рґ";
        mysql_close($link) ;
 	   exit;
      };
