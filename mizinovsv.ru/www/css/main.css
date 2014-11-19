@@ -1,0 +1,45 @@
+A {
+	COLOR: #305ba2; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: none
+}
+A.t {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; COLOR: #305ba2; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.t:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; FONT-FAMILY: Verdana; TEXT-DECORATION: underline
+}
+A.menu-items:hover {
+	COLOR: #5176b5
+}
+A:hover {
+	TEXT-DECORATION: none
+}
+A.menu-items {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 0.4em; COLOR: #3e52a6; TEXT-DECORATION: none
+}
+A.l {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; COLOR: #ffffff; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.l:hover {
+	FONT-FAMILY: Verdana
+}
+H2,H3 {
+	COLOR: #305ba2; FONT-FAMILY: Arial
+}
+LI.menu-items {
+	MARGIN-TOP: 0.4em; LIST-STYLE-IMAGE: url(bul-arrow-blue4.gif); COLOR: #1e56ad
+} 
+TD.db
+{
+    BORDER-RIGHT: #8698cf 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #8698cf 1px solid;
+    FONT-FAMILY: Verdana; 
+}
+TD
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Verdana; 
+}
